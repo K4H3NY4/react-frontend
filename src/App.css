@@ -1,0 +1,246 @@
+body{
+  font-family: Ubuntu;
+  background-color:#fff;
+  overflow-y:scroll;
+}
+
+a{
+  color: #111;
+  
+}
+a:hover{
+  color: #111;
+  text-decoration: none;
+}
+
+.greetings{
+  font-size: 1.5em;
+}
+
+.introText{
+  font-size: 1.5em;
+}
+
+.menu-text{
+  font-size: 1.5em;
+}
+
+.menu-text span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.message{
+  border-style: solid;
+  border-color: #d8d8d8;
+  border-width: 2px;
+  
+  margin-bottom: 30px;
+  border-radius: 5px;
+ 
+}
+
+.messageNew{
+ 
+  border-width: 2px;
+  
+  margin-bottom: 30px;
+  border-radius: 5px;
+ 
+}
+
+
+.newMessage .messageContent{
+  font-size: 2.5em;
+  text-align: center;
+
+}
+
+.newMessage .phone{
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.date , .status{
+  color:#999;
+}
+
+.messageSection{
+  margin-right: -45px;
+
+  margin-left: 45px;
+
+
+}
+
+.addMessage{
+ 
+  border-style: solid;
+  border-color: #d8d8d8;
+  border-width: 2px;
+  margin: 0px 0px 0px 30px;
+  border-radius: 5px;
+ 
+
+}
+
+
+.newMessage input {
+margin: 0;
+font-family: inherit;
+text-align: center;
+border-top-style: none;
+border-left-style: none;
+border-right-style: none;
+border-bottom-style: none;
+border-bottom-width: 1px;
+font-size: 3em;
+}
+
+
+
+
+.newMessage textarea {
+margin: 0;
+font-family: inherit;
+font-size: 3em;
+
+text-align: center;
+
+border-top-style: none;
+border-left-style: none;
+border-right-style: none;
+border-bottom-style: none;
+}
+
+.newMessage input:focus-visible {
+outline: lime auto 1px;
+outline-color: lime;
+outline-style: none;
+outline-width: 1px;
+border-bottom-color: rgb(0, 0, 0);
+border-bottom-style: none;
+border-bottom-width: 3px;
+}
+
+.newMessage textarea:focus-visible {
+font-size: 3em;
+outline: lime auto 1px;
+outline-color: lime;
+outline-style: none;
+outline-width: 1px;
+border-bottom-color: rgb(0, 0, 0);
+border-bottom-style: none;
+border-bottom-width: 3px;
+border-top-color: rgb(0, 0, 0);
+border-top-style: none;
+border-top-width: 3px;
+}
+
+
+
+
+.socialsTwo{
+position: none;
+}
+
+body{
+  font-family: Ubuntu
+}
+
+.greetings{
+  font-size: 1.5em;
+}
+
+.introText{
+  font-size: 1.5em;
+}
+
+.menu li{
+  font-size:3em;
+  list-style:none;
+  border-bottom: 2px;
+  border-bottom-color: #f8f8f8;
+  border-bottom-style: solid;
+  
+  padding-bottom: 20px;
+  
+}
+
+.menu li:hover{
+  color: #111;
+  border-bottom: 2px;
+  border-bottom-color: #111;
+  border-bottom-style: solid;
+  list-style: decimal;
+
+
+}
+.menu{
+  position: absolute;
+  bottom: 30px;
+}
+
+.socials{
+  
+  transform: rotateZ(-90deg);
+  position: fixed;
+  width: 300px;
+  right:-100px;
+  bottom: 50%;
+ 
+}
+img{
+  filter: grayscale(1);
+}
+
+
+.tall{
+  height: 80vh;
+}
+
+
+@media (min-width: 720px) {
+.socialsTwo{
+position: fixed;
+}
+
+
+.socialsTwoDetails{
+transform: rotateZ(-90deg);
+width: 500px;
+position: relative;
+left: -220px;
+bottom:-90%;
+top: 15vw;
+
+}
+
+
+.messageSection{
+
+align-content: center;
+justify-content: space-between;
+align-items: flex-start;
+margin-left: 110px !important;
+margin-right: 0px !important;
+
+
+
+}
+.menu-bar{
+position: fixed;
+top: 0px;
+background-color: #fff;
+z-index:999;
+}
+
+.appSection{
+margin-top: 120px;
+}
+
+.stickyMessage{
+position: fixed;
+top:120px;
+right:30px;
+}
+}
