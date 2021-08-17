@@ -4,6 +4,12 @@ import {Link} from 'react-router-dom';
 
 
 function HomePage() {
+
+if (sessionStorage.getItem('user_id')=== null){
+    window.location.href='login'
+}
+
+
   return (
    <React.Fragment>
 

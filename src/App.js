@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {useState} from 'react'
+
 import './App.css';
 
 
@@ -28,10 +28,7 @@ import RegisterPage from './components/pages/Register';
 //logout
 
 function LandingPage() {
-  const [messages, setMessages ] = useState ([
-    {id: '1' , messages:'hello',status: 'scheduled', receiver_number: '+254700419377', time_scheduled: 'today'}
-
-])
+  
 
   return (
     

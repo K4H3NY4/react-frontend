@@ -3,17 +3,14 @@ import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 
 const api = axios.create({
-    baseURL:'http://127.0.0.1:5000/'
+    baseURL:'https://account-rest.herokuapp.com/'
 })
 
 
 
-class Logout extends Component {
+function Logout () {
    
 
-    
-        constructor(){
-            super();
             api.post('/logout').then(res =>{
                 console.log(res.data)
             } ); 
@@ -24,5 +21,5 @@ class Logout extends Component {
     
 }
 
-}
+
 export default Logout;

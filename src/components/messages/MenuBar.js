@@ -1,41 +1,14 @@
-import React, { Component } from 'react'; 
+import React  from 'react'; 
 import {Link } from 'react-router-dom';
-import axios from 'axios';
 
 
 
-const api = axios.create({
-    baseURL:'http://127.0.0.1:5000/'
-    
- 
-})
+function MenuBar () {
 
-
-
-api.get('/profile',{user_id: sessionStorage.getItem('user_id') }).then(res =>{
-    
-    //var first_name = res.data.first_name
-  //  console.log(res.data.first_name);
-    
-   // console.log(sessionStorage.getItem('user_id'));
-    
-} )
-
-class MenuBar extends Component {
-
-            
-  
-
-
-    render(){
-
-
-        if (sessionStorage.getItem('user_id')=== null){
-            window.location.href='login'
-        }
+        if (sessionStorage.getItem('user_id') === null)
+            {window.location.href='/login'}
        
         return(
-
             
             
         <div className="container-fluid row pt-5 pb-4 menu-bar">
@@ -63,6 +36,6 @@ class MenuBar extends Component {
 
 
         )
+
     }
-}
 export default MenuBar;

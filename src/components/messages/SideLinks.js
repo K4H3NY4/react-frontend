@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./messages.css";
 
 
 
 
-class SideLinks extends Component {
-    render(){
+function SideLinks () {
+    
         return(
             <div className="col-1 socialsTwo">
             <div className="d-none d-lg-block d-md-none d-sm-none socialsTwoDetails">
@@ -18,5 +18,5 @@ class SideLinks extends Component {
 
         )
     }
-}
+
 export default SideLinks;

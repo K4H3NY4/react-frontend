@@ -50,7 +50,7 @@ class AddMessages extends Component {
 
         //alert('A name was submited:' + this.state.email + this.state.password);
         event.preventDefault();
-        window.location.href='/all'
+       
     } 
 
 

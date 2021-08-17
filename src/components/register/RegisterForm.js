@@ -2,21 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL:'http://127.0.0.1:5000/'
+    baseURL:'https://account-rest.herokuapp.com/'
 })
 
 
 
-
-
-
-
-   
-
-
-
-
-        const Create = () =>{
+ function Create () {
             const [first_name, setFirstName] = useState('');
             const [last_name, setLastName] = useState('');
             const [phone, setPhone] = useState('');

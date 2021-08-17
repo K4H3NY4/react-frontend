@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import {BrowserRouter as Router} from 'react-router-dom';
+import { Link , Redirect } from 'react-router-dom';
 
 const api = axios.create({
     baseURL:'http://127.0.0.1:5000/'
@@ -44,7 +45,10 @@ class Login extends Component {
 
 
 
-                window.location.href='/home'
+               window.location.href='/home'
+
+
+ // <Redirect  to="/home" />
             }else{      }          
         
         });
@@ -55,7 +59,7 @@ class Login extends Component {
     render(){
         return(
 
-       
+            <Router>
            <div className="container-fluid row appSection">
         <div className="col-1 socialsTwo">
             <div className="d-none d-lg-block d-md-none d-sm-none socialsTwoDetails">
@@ -103,7 +107,7 @@ class Login extends Component {
                 <button className="mt-5 mb-2 btn btn-dark w-25"  onClick={this.handleSubmit} >Login</button> 
                 <br></br>
                 <p id="p"></p><br></br>
-                <span>Forgot Password</span>
+                <span><Link to="/Reset">Forgot Password </Link></span>
 
 
             </form>
@@ -112,7 +116,7 @@ class Login extends Component {
            </div>
            </div>
           
-
+</Router>
         )
     }
 }

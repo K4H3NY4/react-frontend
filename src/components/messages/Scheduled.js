@@ -17,7 +17,7 @@ const api = axios.create({
 
 const [messages, setMessages] = useState([])
 
-api.post('/messages',{user_id: sessionStorage.getItem('user_id') }).then(res =>{
+api.post('/scheduled-messages',{user_id: sessionStorage.getItem('user_id') }).then(res =>{
     //console.log(res.data.user_messages);
     setMessages(res.data.user_messages);
 

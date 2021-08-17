@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Messages from './Message';
+import React from 'react';
+import Messages from './Scheduled';
 import "./messages.css";
 
 
 
 
 
-class ScheduledMessages extends Component {
-    render(){
+function ScheduledMessages () {
+   
         return(
         
     <div className="container-fluid row appSection">
@@ -15,7 +15,7 @@ class ScheduledMessages extends Component {
     <div className="col-lg-8 col-md-12 col-sm-12 container-fluid row messageSection " align="center">
         
        <Messages />
-       <Messages /> 
+ 
 
     </div>
 
@@ -24,5 +24,5 @@ class ScheduledMessages extends Component {
 
         )
     }
-}
+
 export default ScheduledMessages;

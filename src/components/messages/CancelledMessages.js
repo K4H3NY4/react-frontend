@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Messages from './Message';
+import React  from 'react';
+import Messages from './Canceled';
 import "./messages.css";
 
 
 
 
 
-class CancelledMessages extends Component {
-    render(){
+function CancelledMessages () {
+
         return(
         
     <div className="container-fluid row appSection">
@@ -15,8 +15,7 @@ class CancelledMessages extends Component {
     <div className="col-lg-8 col-md-12 col-sm-12 container-fluid row messageSection " align="center">
 
        <Messages />
-       <Messages /> <Messages /> <Messages />
-       
+     
        
 
 
@@ -30,5 +29,5 @@ class CancelledMessages extends Component {
 
         )
     }
-}
+
 export default CancelledMessages;

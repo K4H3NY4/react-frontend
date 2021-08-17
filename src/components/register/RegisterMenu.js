@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-class RegisterMenu extends Component {
-    render(){
+function RegisterMenu () {
+   
         return(
             <div className="container-fluid row pt-5 pb-4 menu-bar">
             <div className="col-lg-1 col-md-2 col-sm-2">Logo</div>
@@ -13,5 +13,5 @@ class RegisterMenu extends Component {
     
         )
     }
-}
+
 export default RegisterMenu;

@@ -3,7 +3,10 @@
     font-family: Ubuntu;
 }
 
-
+.pageDesign{
+    width: 100vw;
+    display: contents !important;
+}
     
     
     .message{

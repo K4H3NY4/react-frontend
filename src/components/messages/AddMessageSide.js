@@ -67,7 +67,7 @@ class AddMessageSide extends Component {
 
        // alert('A name was submited:'');
         event.preventDefault();
-        window.location.href='/all'
+  
     } 
 
 
